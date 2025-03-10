@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(135deg, #c1f0c1, #8fdc8f);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🎉 กล่องเนื้อหาหลัก */
+.container {
+    padding: 50px;
+}
+.MakeAWish p {
+    text-align: left;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-left: 5%;
+
+    /* 🎨 สไตล์ตัวอักษร */
+    font-family: 'TH Sarabun New', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50; /* สีเขียวอ่อนสไตล์ Tinkerbell */
+
+    /* ✨ เอฟเฟกต์เงาให้อ่านง่ายขึ้น */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+    /* 🌟 เพิ่มเส้นขอบล้อมรอบข้อความ */
+    border-left: 5px solid #81C784;
+    padding-left: 15px;
+}
+
+/* ✨ หัวข้อ Happy Birthday */
+h1 {
+    font-family: 'TH Sarabun New', cursive; /* เพิ่มความเป็นแฟนตาซี */
+    font-size: 56px; /* ขยายให้ดูโดดเด่น */
+    font-weight: bold;
+    color: #4CAF50; /* สีเขียวอ่อนแนว Tinkerbell */
+
+    /* ✨ เพิ่มเอฟเฟกต์เรืองแสงนุ่มๆ */
+    text-shadow: 3px 3px 10px rgba(76, 175, 80, 0.5), 
+                 0px 0px 15px rgba(255, 255, 0, 0.6);
+
+    /* 🌿 ใส่ระยะห่างให้อ่านง่ายขึ้น */
+    margin-top: 20px;
+    padding: 10px 20px;
+    
+    /* 🧚🏻 เพิ่มขอบมน + เส้นขอบสวยๆ */
+    border-radius: 15px;
+    border: 3px solid #81C784;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2); /* พื้นหลังโปร่งใสเบาๆ */
+    backdrop-filter: blur(5px); /* ทำให้ดูเบลอเล็กน้อย */
+}
+
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    position: relative;  /* เปลี่ยนจาก absolute เป็น relative */
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;  /* ให้เมาส์เปลี่ยนเป็น pointer */
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container:first-child{
+    transform: rotate(23deg);
+}
+.image-container:nth-child(2){
+    transform: rotate(328deg);
+}
+.image-container:nth-child(3){
+    transform: rotate(169deg);
+}
+.image {
+    border-radius: 2em;
+    width: 100%;
+    height: 100%;
+    border: 15px solid white;
+    cursor: pointer;
+}
+.stacked-images {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.stacked-images img {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: transform 0.3s ease-in-out;
+}
+
+.stacked-images img:nth-child(2) {
+    transform: rotate(-10deg) translateY(10px);
+}
+
+.stacked-images img:nth-child(3) {
+    transform: rotate(10deg) translateY(20px);
+}
+
+.stacked-images:hover img {
+    transform: scale(1.1);
+} 
