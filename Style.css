@@ -71,6 +71,13 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute;  /* Position images absolutely within the container */
+    top: 0;
+    left: 0;
+    border-radius: 2em;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .image-container:first-child{
