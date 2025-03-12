@@ -1,8 +1,7 @@
 let childElement = document.querySelectorAll
     (".image-container");
 
-let imageUrls = ["IMG_9910.jpeg" , "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg", "https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"];
-
+let imageUrls = ["IMG_9910.jpeg" , "IMG_5832.JPEG", "IMG_5324.JPEG","IMG_4912.JPEG","IMG_2945.JPEG"];
 
 //init z-inedx
 let zIndex = 1;
